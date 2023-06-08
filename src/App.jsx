@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       {parksData.map((park) => (
-        <ul key={park.ParkName}>
-          <li>{park.ParkName}</li>
-          <li>{park.Size}</li>
+        <ul key={park.park_name}>
+          <li>Name: {park.park_name}</li>
+          <li>Rating: {park.star_rating}</li>
+          <li>Lat: {park.geolocation._latitude}</li>
+          <li>Lat: {park.geolocation._longitude}</li>
         </ul>
       ))}
     </>
